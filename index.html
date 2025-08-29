@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Mastery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Part 1: JavaScript Basics -->
+        <section id="part1">
+            <h2> Part 1: JavaScript Basics</h2>
+            <div class="exercise">
+                <h3>Age Checker</h3>
+                <p>Enter your age to check if you're eligible to vote:</p>
+                <input type="number" id="ageInput" placeholder="Enter your age" min="0">
+                <button onclick="checkAge()">Check Eligibility</button>
+                <p id="ageResult" class="result"></p>
+            </div>
+
+            <div class="exercise">
+                <h3>Number Comparison</h3>
+                <p>Enter two numbers to compare them:</p>
+                <input type="number" id="num1" placeholder="First number">
+                <input type="number" id="num2" placeholder="Second number">
+                <button onclick="compareNumbers()">Compare Numbers</button>
+                <p id="comparisonResult" class="result"></p>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section id="part2">
+            <h2> Part 2: JavaScript Functions</h2>
+            <div class="exercise">
+                <h3>Calculator Functions</h3>
+                <p>Enter two numbers for calculations:</p>
+                <input type="number" id="calcNum1" placeholder="First number">
+                <input type="number" id="calcNum2" placeholder="Second number">
+                <div class="button-group">
+                    <button onclick="calculate('add')">Add (+)</button>
+                    <button onclick="calculate('subtract')">Subtract (-)</button>
+                    <button onclick="calculate('multiply')">Multiply (×)</button>
+                    <button onclick="calculate('divide')">Divide (÷)</button>
+                </div>
+                <p id="calculationResult" class="result"></p>
+            </div>
+
+            <div class="exercise">
+                <h3>String Formatter</h3>
+                <p>Enter text to format it:</p>
+                <input type="text" id="textInput" placeholder="Enter some text">
+                <div class="button-group">
+                    <button onclick="formatText('uppercase')">UPPERCASE</button>
+                    <button onclick="formatText('lowercase')">lowercase</button>
+                    <button onclick="formatText('capitalize')">Capitalize Words</button>
+                </div>
+                <p id="formattedText" class="result"></p>
+            </div>
+        </section>
+
+        <!-- Part 3: JavaScript Loops -->
+        <section id="part3">
+            <h2> Part 3: JavaScript Loops</h2>
+            <div class="exercise">
+                <h3>Multiplication Table</h3>
+                <p>Enter a number to generate its multiplication table:</p>
+                <input type="number" id="tableNumber" placeholder="Enter a number" min="1">
+                <button onclick="generateTable()">Generate Table</button>
+                <div id="multiplicationTable" class="result"></div>
+            </div>
+
+            <div class="exercise">
+                <h3>Number Sequence</h3>
+                <p>Generate a sequence of numbers:</p>
+                <input type="number" id="startNum" placeholder="Start number" value="1">
+                <input type="number" id="endNum" placeholder="End number" value="10">
+                <button onclick="generateSequence()">Generate Sequence</button>
+                <p id="sequenceResult" class="result"></p>
+            </div>
+
+            <div class="exercise">
+                <h3>Array Operations</h3>
+                <p>Enter numbers separated by commas:</p>
+                <input type="text" id="arrayInput" placeholder="e.g., 1,2,3,4,5">
+                <div class="button-group">
+                    <button onclick="processArray('sum')">Calculate Sum</button>
+                    <button onclick="processArray('average')">Calculate Average</button>
+                    <button onclick="processArray('max')">Find Maximum</button>
+                    <button onclick="processArray('min')">Find Minimum</button>
+                </div>
+                <p id="arrayResult" class="result"></p>
+            </div>
+        </section>
+
+        <!-- Part 4: DOM Manipulation -->
+        <section id="part4">
+            <h2> Part 4: DOM Manipulation</h2>
+            <div class="exercise">
+                <h3>Theme Switcher</h3>
+                <p>Change the theme of this page:</p>
+                <div class="button-group">
+                    <button onclick="changeTheme('light')">Light Theme</button>
+                    <button onclick="changeTheme('dark')">Dark Theme</button>
+                    <button onclick="changeTheme('blue')">Blue Theme</button>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Dynamic List Manager</h3>
+                <p>Add items to the list:</p>
+                <input type="text" id="listItemInput" placeholder="Enter item text">
+                <button onclick="addListItem()">Add Item</button>
+                <button onclick="clearList()">Clear List</button>
+                <ul id="dynamicList"></ul>
+            </div>
+
+            <div class="exercise">
+                <h3>Interactive Counter</h3>
+                <p>Current count: <span id="counterValue">0</span></p>
+                <div class="button-group">
+                    <button onclick="updateCounter(1)">Increment (+1)</button>
+                    <button onclick="updateCounter(-1)">Decrement (-1)</button>
+                    <button onclick="updateCounter(5)">Add 5</button>
+                    <button onclick="resetCounter()">Reset</button>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Element Creator</h3>
+                <p>Create custom elements:</p>
+                <select id="elementType">
+                    <option value="p">Paragraph</option>
+                    <option value="h3">Heading</option>
+                    <option value="div">Div</option>
+                    <option value="span">Span</option>
+                </select>
+                <input type="text" id="elementContent" placeholder="Enter content">
+                <button onclick="createElement()">Create Element</button>
+                <div id="elementContainer"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
